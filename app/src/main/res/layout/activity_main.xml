@@ -2,10 +2,43 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/talk"
+    android:layout_height="match_parent"
+    android:background="#d8e0e8"
     tools:context=".MainActivity">
 
 
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/msg_recy_view"
+    android:layout_width="match_parent"
+
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+<EditText
+    android:id="@+id/text_send"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:hint="type something here"
+    android:maxLines="3"
+    />
+
+<Button
+    android:id="@+id/send_msg_but"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Send"
+    android:textColor="#FFFFFF"
+    android:background="#42BA77"
+    />
+
+</LinearLayout>
 </LinearLayout>
